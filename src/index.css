@@ -1,0 +1,20 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .png-white {
+    filter: invert(98%) sepia(9%) saturate(1048%) hue-rotate(253deg) brightness(117%) contrast(100%);
+  }
+  .png-black {
+    filter: saturate(1000%) brightness(50%) contrast(100%);
+  }
+}
