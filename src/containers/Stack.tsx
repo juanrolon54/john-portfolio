@@ -169,7 +169,7 @@ export default () => {
             <p className="text-4xl md:col-span-2">I present to you my <span className="font-mono font-semibold">technology</span> stack:</p>
             <AnimatePresence >
                 <LayoutGroup >
-                    {isSelected && <motion.div layout key={tech.name} layoutId={tech.name} className="aspect-square lg:aspect-video overflow-hidden backdrop-blur-xl inset-32 border-black border dark:border-white flex flex-col gap-4">
+                    {isSelected && <motion.div layout key={tech.name} layoutId={tech.name} className="aspect-square md:aspect-video overflow-hidden backdrop-blur-xl inset-32 border-black border dark:border-white flex flex-col gap-4">
                         <div className="grid grid-cols-3">
                             <motion.span layoutId={tech.name + 'name'} className="col-span-2 text-6xl font-serif font-semibold p-2 z-10 select-none h-full flex flex-col pt-8">{tech.name}<a href={tech.website} target='_blank' className="text-xs tracking-tighter underline" onClick={(e) => { e.stopPropagation() }}>go to website</a></motion.span>
                             <motion.img layoutId={tech.name + 'img'} loading="lazy" src={tech.imgUrl} className="object-contain aspect-square col-start-3 png-black dark:png-white p-4" />
