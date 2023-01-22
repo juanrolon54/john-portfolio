@@ -3,15 +3,13 @@ import { Deflected } from "../components"
 
 export default () => {
     return (
-        <div className="relative grid place-items-center pt-64 md:grid-cols-3 dark:text-white">
-            <Deflected.right className="p-8 pb-64 backdrop-blur-sm w-fit border-2 border-black dark:border-white col-span-2 dark:text-white -skew-y-6 rounded-lg" >
-                <div className="text-5xl font-semibold leading-snug">Hello! My name is Juan Rolón
-                </div>
-                <div className="flex items-baseline gap-2 text-4xl">
-                    I <p className="italic font-serif tracking-tight">design</p> and <p className="font-sans tracking-tight first-letter:underline font-semibold">develop</p><CyclicTitles />
-                </div>
-            </Deflected.right>
-        </div>
+        <Deflected.right className="mt-72 p-8 pb-64 w-fit border-2 surface col-span-2" >
+            <div className="text-5xl font-semibold leading-snug">Hello! My name is Juan Rolón
+            </div>
+            <div className="flex items-baseline gap-2 text-4xl">
+                I <p className="italic font-serif tracking-tight">design</p> and <p className="font-sans tracking-tight first-letter:underline font-semibold">develop</p><CyclicTitles />
+            </div>
+        </Deflected.right>
     )
 }
 

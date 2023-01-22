@@ -17,4 +17,10 @@
   .png-black {
     filter: saturate(1000%) brightness(50%) contrast(100%);
   }
+  .surface {
+    @apply backdrop-blur-sm border-black border-2 dark:border-white overflow-hidden rounded-lg text-black dark:text-white;
+  }
+  .-surface {
+    @apply bg-black dark:bg-white text-white dark:text-black rounded-lg;
+  }
 }
